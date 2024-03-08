@@ -11,12 +11,10 @@ import utils.Utils;
 
 
 public class ApiSecondTestCase {
-    private ApiResponses apiPage;
 
     @BeforeClass
     public void setup() {
         PropertyConfigurator.configure("src/main/resources/log4j.properties");
-        this.apiPage = new ApiResponses();
         RestAssured.baseURI = "http://api.zippopotam.us";
 
 
